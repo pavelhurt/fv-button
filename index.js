@@ -24,6 +24,17 @@ var render = function(el) {
     attributes: {
       "v-on": "click: onClick"
     },
+    paramAttributes: ["icon"],
+    ready: function() {
+      var i;
+      if(this.icon) {
+        var Icon = Vue.extend({
+          tagName: "div",
+          template: require(this.icon)
+        });
+        new Icon().$before(this.$el.querySelector("div"));
+      }
+    },
     methods: {
       onClick: function(e) {
         var parent = e.currentTarget;

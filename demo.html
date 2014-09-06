@@ -37,6 +37,15 @@
       justify-content: center;
       top: 228px;
     }
+    fv-button.fab, .fv-button.fab {
+      padding: 16px;
+      width: 56px;
+      height: 56px;
+      box-shadow: 0 2px 5px 0 rgba(0,0,0,.258824);
+      border-radius: 50%;
+      background-color: #ffc107;
+      fill: #fff;
+    }
   </style>
 </head>
 <body>
@@ -45,13 +54,15 @@
     <h1>feaven button demo</h1>
   </fv-toolbar>
   <section class="card-content-position">
-    <fv-button>Start</fv-button>
+    <fv-button id="start">Start</fv-button>
+    <fv-button class="fab" icon="./img/icons/right-arrow24.svg"></fv-button>
   </section>
 </article>
 </body>
 <script src="build/build.js"></script>
 <script>
 var fb = require("fv-button");
-fb.render("fv-button");
+fb.render("#start");
+fb.render(".fab");
 </script>
 </html>

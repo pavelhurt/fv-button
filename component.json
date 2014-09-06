@@ -2,7 +2,7 @@
   "name": "fv-button",
   "repo": "pavelhurt/fv-button",
   "description": "feaven button built with component",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "keywords": [
     "fv-button",
     "feaven",
@@ -19,6 +19,7 @@
     "index.js"
   ],
   "templates": [
+    "img/icons/right-arrow24.svg",
     "template.html"
   ],
   "styles": [
